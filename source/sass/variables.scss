@@ -31,7 +31,7 @@ $color-black-pearl--dark-70:        rgba($color-black-pearl--dark, 0.7);
 
 // Gradient
 
-$black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+$black-pearl-to-bottom:                    linear-gradient(180deg, $color-black-pearl--light 84.9%, rgba($color-black-pearl--light, 0) 100%);
 
 // Typography
 // ---------------------------------
@@ -61,10 +61,9 @@ $trans-600:                         0.6s $tf-default;
 // ---------------------------------
 
 $vp-320:                            320px;
-// $vp-769-9:                          769.9px;
-$vp-770:                            770px;
-// $vp-1919-9:                         1919.9px;
-$vp-1920:                           1920px;
+$vp-768:                            768px;
+$vp-1024:                           1024px;
+$vp-1200:                           1200px;
 
 // Retina
 // ---------------------------------

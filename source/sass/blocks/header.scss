@@ -1,0 +1,176 @@
+.header {
+  position: absolute;
+  width: 100%;
+  background-image: $black-pearl-to-bottom;
+
+  @include desktop-only {
+    position: fixed;
+  }
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  padding-top: 30px;
+  padding-bottom: 35px;
+
+  @include vp-1023 {
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+
+  @include vp-767 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+}
+
+.header__logo-link {
+  display: flex;
+
+  &:focus-visible {
+    outline: 2px solid $color-deep-sky-blue--dark;
+    outline-offset: 4px;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.header__logo {
+  --smallIconVibsibility: none;
+
+  width: 215px;
+  height: 55px;
+  color: $color-alice-blue;
+
+  @include vp-767 {
+    --textVibsibility: none;
+    --bigIconVibsibility: none;
+    --smallIconVibsibility: block;
+
+    width: 35px;
+    height: 35px;
+    margin: 5px 0 0 1px;
+    color: $color-deep-sky-blue--dark;
+  }
+}
+
+.header__logo-link:hover .header__logo {
+  color: $color-deep-sky-blue--dark;
+
+  @include vp-767 {
+    color: $color-alice-blue;
+  }
+}
+
+.header__contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 460px;
+  font-style: normal;
+  font-family: $ff-pt-mono;
+  line-height: 18px;
+
+  @include desktop-only {
+    justify-content: space-between;
+    flex-grow: 1;
+    margin: 15px 5px 0 0;
+  }
+
+  @include vp-1200 {
+    max-width: 41%;
+  }
+
+  @include vp-1023 {
+    max-width: unset;
+    margin-right: 20px;
+    gap: 10px 20px;
+  }
+
+  @include vp-767 {
+    margin-right: 10px;
+  }
+}
+
+.header__contact {
+  display: flex;
+  gap: 15px;
+
+  @include vp-1023 {
+    padding: 10px;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-deep-sky-blue--dark;
+    outline-offset: 4px;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.header__contact-icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  color: $color-deep-sky-blue--dark;
+}
+
+.header__contact:hover .header__contact-icon {
+  @include vp-1023 {
+    color: $color-alice-blue;
+  }
+}
+
+.header__contact-text {
+  color: $color-alice-blue--dark;
+
+  @include vp-1023 {
+    @include visually-hidden;
+  }
+}
+
+.header__contact:hover .header__contact-text {
+  color: $color-deep-sky-blue--dark;
+}
+
+.header__button {
+  flex-shrink: 0;
+  max-width: 180px;
+  margin: 5px 60px 0 0;
+  padding: 11px 17px 11px 16px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-alice-blue;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 1px solid $color-alice-blue;
+  border-radius: 3px;
+  user-select: none;
+
+  @include vp-1023 {
+    display: none;
+  }
+
+  &:hover {
+    color: $color-deep-sky-blue--dark;
+    border-color: $color-deep-sky-blue--dark;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-deep-sky-blue--dark;
+    outline-offset: 4px;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
