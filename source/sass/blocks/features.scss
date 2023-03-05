@@ -1,0 +1,169 @@
+.features {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  @include vp-1023 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  @include vp-767 {
+    padding: 50px 25px;
+  }
+}
+
+.features__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(300px, auto);
+  gap: 30px 31px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @include vp-1023 {
+    grid-auto-rows: minmax(360px, auto);
+    gap: 30px 28px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(325px, auto);
+  }
+}
+
+.features__item {
+  position: relative;
+  padding: 40px 40px 35px 45px;
+  border: 1px solid $color-whisper;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    width: 5px;
+    display: block;
+    background-color: $color-deep-sky-blue--dark;
+  }
+
+  @include vp-1023 {
+    padding-bottom: 30px;
+  }
+
+  @include vp-767 {
+    padding: 30px 30px 35px;
+  }
+
+  &--time,
+  &--suppliers {
+    @include vp-767 {
+      min-height: 340px;
+    }
+  }
+
+  &:hover {
+    border-color: $color-deep-sky-blue--dark;
+    background-color: $color-deep-sky-blue--dark;
+  }
+}
+
+.features__item svg {
+  display: block;
+  width: 35px;
+  height: 35px;
+  margin-bottom: 20px;
+  color: $color-deep-sky-blue--dark;
+
+  @include vp-1023 {
+    margin-bottom: 15px;
+  }
+
+  @include vp-767 {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.features__item--confidentiality svg {
+  @include desktop-only {
+    margin-left: -6px;
+  }
+
+  @include vp-1023 {
+    margin-bottom: 12px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 18px;
+  }
+}
+
+.features__item--cost svg {
+  @include vp-1023 {
+    margin-bottom: 9px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 17px;
+  }
+}
+
+.features__item:hover svg {
+  color: $color-alice-blue;
+}
+
+.features__item h3 {
+  margin: 0;
+  margin-bottom: 13px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: $color-deep-sky-blue--dark;
+
+  @include vp-1023 {
+    margin-bottom: 7px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 9px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.features__item--cost h3 {
+  @include vp-1023 {
+    margin-bottom: 3px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 14px;
+  }
+}
+
+.features__item--confidentiality h3 {
+  @include vp-767 {
+    margin-bottom: 13px;
+  }
+}
+
+.features__item:hover h3 {
+  color: $color-alice-blue;
+}
+
+.features__item p {
+  margin: 0;
+  font-family: $ff-pt-mono;
+  color: $color-black-pearl--light;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+.features__item:hover p {
+  color: $color-alice-blue;
+}
