@@ -1,0 +1,147 @@
+.footer-group {
+  padding-top: 8px;
+
+  @include vp-767 {
+    position: relative;
+    padding: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $color-alice-blue--light-70;
+    }
+  }
+}
+
+.footer-group__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-default-white;
+
+  @include vp-767 {
+    position: relative;
+    margin: 0;
+    padding: 22px 41px 22px 25px;
+    cursor: pointer;
+    user-select: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 27px;
+      right: 26px;
+      width: 15px;
+      height: 1px;
+      background-color: $color-silver;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 27px;
+      right: 26px;
+      width: 15px;
+      height: 1px;
+      background-color: $color-silver;
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.footer-group.is-active .footer-group__title {
+  @include vp-767 {
+    padding-bottom: 15px;
+  }
+}
+
+.footer-group.is-active .footer-group__title::after {
+  transform: rotate(0);
+}
+
+.footer-group__content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 30px;
+
+  @include vp-1023 {
+    display: block;
+  }
+}
+
+.footer-group__list {
+  display: grid;
+  align-self: start;
+  gap: 8px 30px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @include vp-1023 {
+    padding-bottom: 8px;
+    padding-right: 100px;
+  }
+
+  @include vp-767 {
+    gap: 11px;
+    padding: 0 25px 18px;
+
+    &:not(:last-child) {
+      padding-bottom: 11px;
+    }
+  }
+}
+
+.footer-group__link {
+  font-family: $ff-pt-mono;
+  font-style: normal;
+  color: $color-default-white--70;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  &:hover {
+    color: $color-deep-sky-blue--dark-70;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-deep-sky-blue--dark;
+    outline-offset: 4px;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.footer-group__contacts {
+  display: grid;
+  gap: 8px;
+
+  @include vp-767 {
+    gap: 11px;
+    padding: 0 25px 18px;
+  }
+}
+
+.footer-group__address {
+  margin: 0;
+  font-family: $ff-pt-mono;
+  font-style: normal;
+  color: $color-default-white--70;
+
+  @include vp-767 {
+    margin-bottom: 11px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+}

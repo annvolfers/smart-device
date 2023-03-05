@@ -45,8 +45,91 @@
 
     <main></main>
 
-    <footer>
-      <div class="container">
+    <footer class="footer" data-tabs="element">
+      <h2 class="visually-hidden">Ссылки.</h2>
+      <div class="footer__container container" data-accordion="parent" data-single="data-single"
+        data-destroy="(max-width: 768px)">
+        <div class="footer__header-wrapper">
+          <a class="footer__logo-link" href="index.html">
+            <svg class="footer__logo" width="215" height="55" role="img" aria-label="Логотип магазина Smart Device."
+              focusable="false" fill="currentColor">
+              <use xlink:href="./img/svg/logo-smart-device.svg#logo" />
+            </svg>
+          </a>
+          <section class="footer__social social">
+            <h3 class="visually-hidden">Социальные сети.</h3>
+            <ul class="social__list">
+              <li>
+                <a href="#" class="social__link">
+                  <svg class="social__icon" width="30" height="30" aria-hidden="true" focusable="false"
+                    fill="currentColor">
+                    <use href="./img/sprite.svg#ok" />
+                  </svg>
+                  <span class="visually-hidden">Одноклассники.</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="social__link">
+                  <svg class="social__icon" width="30" height="30" aria-hidden="true" focusable="false"
+                    fill="currentColor">
+                    <use href="./img/sprite.svg#vk" />
+                  </svg>
+                  <span class="visually-hidden">Вконтакте.</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="social__link">
+                  <svg class="social__icon" width="30" height="30" aria-hidden="true" focusable="false"
+                    fill="currentColor">
+                    <use href="./img/sprite.svg#pinterest" />
+                  </svg>
+                  <span class="visually-hidden">Pinterest.</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <nav class="footer-group" data-accordion="element">
+          <h3 class="footer-group__title" data-accordion="button">Разделы сайта</h3>
+          <div class="footer-group__content-wrapper" data-accordion="content">
+            <ul class="footer-group__list">
+              <li>
+                <a class="footer-group__link" href="#">О Компании</a>
+              </li>
+              <li>
+                <a class="footer-group__link" href="#">Продукты</a>
+              </li>
+              <li>
+                <a class="footer-group__link" href="#">Производство печатных плат</a>
+              </li>
+              <li>
+                <a class="footer-group__link" href="#">Монтаж печатных плат</a>
+              </li>
+            </ul>
+            <ul class="footer-group__list">
+              <li>
+                <a class="footer-group__link" href="#">Комплектующие</a>
+              </li>
+              <li>
+                <a class="footer-group__link" href="#">Доставка</a>
+              </li>
+              <li>
+                <a class="footer-group__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <section class="footer-group" data-accordion="element">
+          <h3 class="footer-group__title" data-accordion="button">Наш офис</h3>
+          <div data-accordion="content">
+            <address class="footer-group__contacts">
+              <p class="footer-group__address">г. Мытищи, Олимпийский проспект, д.10</p>
+              <a class="footer-group__link" href="tel:+74955894050">+7 (495) 589-40-50</a>
+              <a class="footer-group__link" href="tel:+79253895829">+7 (925) 389-58-29</a>
+              <a class="footer-group__link" href="tel:+79253647813">+7 (925) 364-78-13</a>
+            </address>
+          </div>
+        </section>
       </div>
     </footer>
   </div>
