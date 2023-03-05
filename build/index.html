@@ -8,9 +8,9 @@
   <meta name="description"
     content="Smart Device - производство и монтаж печатных плат, поставка комплектующих, блоков и модулей">
   <title>Smart Device - умные решения</title>
-  <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="fonts/PTMono-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="preload" href="./fonts/PTMono-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/RobotoCondensed-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body>
@@ -43,7 +43,33 @@
       </div>
     </header>
 
-    <main></main>
+    <main>
+      <section class="intro">
+        <picture>
+          <source media="(max-width: 767px)" type="image/webp"
+            srcset="./img/intro-background-mobile.webp 1x, ./img/intro-background-mobile@2x.webp 2x">
+          <source media="(max-width: 1023px)" type="image/webp"
+            srcset="./img/intro-background-tablet.webp 1x, ./img/intro-background-tablet@2x.webp 2x">
+          <source type="image/webp"
+            srcset="./img/intro-background-desktop.webp 1x, ./img/intro-background-desktop@2x.webp 2x">
+          <source media="(max-width: 767px)"
+            srcset="./img/intro-background-mobile.jpg 1x, ./img/intro-background-mobile@2x.jpg 2x">
+          <source media="(max-width: 1023px)"
+            srcset="./img/intro-background-tablet.jpg 1x, ./img/intro-background-tablet@2x.jpg 2x">
+          <img class="intro__image" width="1920" height="880" src="./img/intro-background-desktop.jpg"
+            srcset="./img/intro-background-desktop@2x.jpg 2x" alt="Крупный план печатной платы.">
+        </picture>
+        <div class="intro__container container">
+          <h1 class="intro__title">Печатные платы</h1>
+          <p class="intro__description">производство и&nbsp;монтаж, поставка комплектующих, <br>блоков и&nbsp;модулей
+          </p>
+          <a class="intro__button button" href="form.html">
+            <span class="intro__button-text--not-mobile">Получить бесплатную консультацию</span>
+            <span class="intro__button-text--mobile">бесплатная консультация</span>
+          </a>
+        </div>
+      </section>
+    </main>
 
     <footer class="footer" data-tabs="element">
       <h2 class="visually-hidden">Ссылки.</h2>
@@ -94,7 +120,7 @@
           <div class="footer-group__content-wrapper" data-accordion="content">
             <ul class="footer-group__list">
               <li>
-                <a class="footer-group__link" href="#">О Компании</a>
+                <a class="footer-group__link" href="#">О&nbsp;Компании</a>
               </li>
               <li>
                 <a class="footer-group__link" href="#">Продукты</a>

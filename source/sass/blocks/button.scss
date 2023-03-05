@@ -25,4 +25,21 @@
 //   }
 // }
 
-// .button {}
+.button {
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 3px;
+  user-select: none;
+
+  &:focus-visible {
+    outline: 2px solid $color-deep-sky-blue--dark;
+    outline-offset: 4px;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}

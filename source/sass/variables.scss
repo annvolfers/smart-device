@@ -33,7 +33,8 @@ $color-silver:                      #c4c4c4;
 
 // Gradient
 
-$black-pearl-to-bottom:                    linear-gradient(180deg, $color-black-pearl--light 84.9%, rgba($color-black-pearl--light, 0) 100%);
+$black-pearl-light-to-bottom:       linear-gradient(180deg, $color-black-pearl--light 84.9%, rgba($color-black-pearl--light, 0) 100%);
+$black-pearl-lighten-to-bottom:     linear-gradient(180deg, rgba($color-black-pearl--lighten, 0.7) 71.72%, rgba($color-black-pearl--lighten, 0) 100%);
 
 // Typography
 // ---------------------------------

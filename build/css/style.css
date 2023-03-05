@@ -429,7 +429,6 @@ html {
   line-height: 22px;
   font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
   color: #041827;
-  background-color: #f8fdff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -636,6 +635,28 @@ button,
   max-width: 1320px;
   margin: 0 auto;
   padding: 0 50px;
+}
+
+.button {
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.button:focus-visible {
+  outline: 2px solid #00b2ff;
+  outline-offset: 4px;
+}
+
+.button:active {
+  opacity: 0.7;
 }
 
 .modal {
@@ -1266,6 +1287,7 @@ button,
 
 .header {
   position: absolute;
+  z-index: 10;
   width: 100%;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
   background-image: -o-linear-gradient(top, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
@@ -1364,33 +1386,15 @@ button,
   max-width: 180px;
   margin: 5px 60px 0 0;
   padding: 11px 17px 11px 16px;
-  font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   color: #f2f5f7;
-  text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
   border: 1px solid #f2f5f7;
-  border-radius: 3px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 .header__button:hover {
   color: #00b2ff;
   border-color: #00b2ff;
-}
-
-.header__button:focus-visible {
-  outline: 2px solid #00b2ff;
-  outline-offset: 4px;
-}
-
-.header__button:active {
-  opacity: 0.7;
 }
 
 .footer {
@@ -1556,6 +1560,64 @@ button,
   opacity: 0.7;
 }
 
+.intro {
+  position: relative;
+  padding-top: 304px;
+  padding-bottom: 280px;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0)));
+  background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
+  background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
+}
+
+.intro__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background-color: #041827;
+}
+
+.intro__title {
+  margin: 0;
+  margin-bottom: 32px;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #f2f5f7;
+}
+
+.intro__description {
+  margin: 0;
+  margin-bottom: 47px;
+  font-family: "PT Mono", "Courier New", monospace;
+  font-size: 22px;
+  line-height: 34px;
+  color: #f2f5f7;
+}
+
+.intro__button {
+  padding: 16px 28px 18px 26px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #f2f5f7;
+  background-color: #00b2ff;
+}
+
+.intro__button:hover {
+  color: #00b2ff;
+  background-color: #f2f5f7;
+}
+
+.intro__button-text--mobile {
+  display: none;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1610,6 +1672,11 @@ button,
     -ms-flex-positive: 1;
     flex-grow: 1;
     margin: 15px 5px 0 0;
+  }
+
+  .intro__container {
+    padding-right: 100px;
+    padding-left: 175px;
   }
 }
 
@@ -1695,6 +1762,25 @@ button,
   .footer-group__list {
     padding-bottom: 8px;
     padding-right: 100px;
+  }
+
+  .intro {
+    padding-top: 180px;
+    padding-bottom: 205px;
+  }
+
+  .intro__title {
+    margin: 0;
+    font-size: 64px;
+    line-height: 75px;
+  }
+
+  .intro__description {
+    margin-bottom: 57px;
+  }
+
+  .intro__button {
+    margin-left: 45px;
   }
 }
 
@@ -1874,6 +1960,42 @@ button,
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+  }
+
+  .intro {
+    padding: 150px 25px 190px;
+  }
+
+  .intro__title {
+    margin-bottom: 8px;
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .intro__description {
+    margin-bottom: 44px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .intro__description br {
+    display: none;
+  }
+
+  .intro__button {
+    width: 100%;
+    margin-left: 0;
+    padding: 13px 28px 11px 26px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .intro__button-text--not-mobile {
+    display: none;
+  }
+
+  .intro__button-text--mobile {
+    display: inline;
   }
 }
 

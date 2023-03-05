@@ -1,7 +1,8 @@
 .header {
   position: absolute;
+  z-index: 10;
   width: 100%;
-  background-image: $black-pearl-to-bottom;
+  background-image: $black-pearl-light-to-bottom;
 
   @include desktop-only {
     position: fixed;
@@ -144,16 +145,10 @@
   max-width: 180px;
   margin: 5px 60px 0 0;
   padding: 11px 17px 11px 16px;
-  font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   color: $color-alice-blue;
-  text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
   border: 1px solid $color-alice-blue;
-  border-radius: 3px;
-  user-select: none;
 
   @include vp-1023 {
     display: none;
@@ -162,14 +157,5 @@
   &:hover {
     color: $color-deep-sky-blue--dark;
     border-color: $color-deep-sky-blue--dark;
-  }
-
-  &:focus-visible {
-    outline: 2px solid $color-deep-sky-blue--dark;
-    outline-offset: 4px;
-  }
-
-  &:active {
-    opacity: 0.7;
   }
 }
