@@ -2,7 +2,11 @@
   min-height: 420px;
   padding-left: 300px;
   padding-bottom: 120px;
-  background-image: url(../../img/2022.png);
+  background-image: image-set(url("../../img/2022@2x.webp") 2x,
+      url("../../img/2022.webp") 1x,
+      url("../../img/2022@2x.png") 2x,
+      url("../../img/2022.png") 1x);
+  background-size: 150px 320px;
   background-repeat: no-repeat;
   background-position: 50px 0;
 
@@ -72,10 +76,11 @@
     margin-top: 14px;
     padding: 8px 12px 9px;
   }
-}
 
-.about--nojs .about__button {
-  display: none;
+  &:hover {
+    color: $color-alice-blue--light;
+    background-color: $color-deep-sky-blue--dark;
+  }
 }
 
 /* Expand */
@@ -90,11 +95,11 @@
   }
 }
 
-[data-setting="not-expand"] > [data-expand="button"] {
+[data-setting="not-expand"]>[data-expand="button"] {
   display: none;
 }
 
-[data-setting="expand-for-mobile-only"] > [data-expand="button"] {
+[data-setting="expand-for-mobile-only"]>[data-expand="button"] {
   display: none;
 
   @include vp-767 {
@@ -102,6 +107,6 @@
   }
 }
 
-[data-expand="button"] > [data-expand^="text-"].is-hidden {
+[data-expand="button"]>[data-expand^="text-"].is-hidden {
   display: none;
 }

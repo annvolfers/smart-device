@@ -46,9 +46,9 @@
     <main>
       <section class="intro">
         <picture>
-          <source media="(max-width: 767px)" type="image/webp"
+          <source type="image/webp" media="(max-width: 767px)"
             srcset="./img/intro-background-mobile.webp 1x, ./img/intro-background-mobile@2x.webp 2x">
-          <source media="(max-width: 1023px)" type="image/webp"
+          <source type="image/webp" media="(max-width: 1023px)"
             srcset="./img/intro-background-tablet.webp 1x, ./img/intro-background-tablet@2x.webp 2x">
           <source type="image/webp"
             srcset="./img/intro-background-desktop.webp 1x, ./img/intro-background-desktop@2x.webp 2x">
@@ -64,11 +64,12 @@
           <p class="intro__description">производство и&nbsp;монтаж, поставка комплектующих, <br>блоков и&nbsp;модулей
           </p>
           <a class="intro__button button" href="form.html">
-            <span class="intro__button-text--not-mobile">Получить бесплатную консультацию</span>
-            <span class="intro__button-text--mobile">бесплатная консультация</span>
+            <span class="intro__button-text intro__button-text--not-mobile">Получить бесплатную консультацию</span>
+            <span class="intro__button-text intro__button-text--mobile">бесплатная консультация</span>
           </a>
         </div>
       </section>
+
       <section class="features container">
         <h2 class="visually-hidden">Преимущества компании.</h2>
         <ul class="features__list">
@@ -105,14 +106,15 @@
           </li>
         </ul>
       </section>
-      <section class="about about--nojs container" data-expand="element">
+
+      <section class="about container" data-expand="element">
         <h2>О компании</h2>
         <p>Мы&nbsp;поставляем электронные комплектующие, производим печатные платы
           и&nbsp;предоставляем мировые технологии с&nbsp;1997&nbsp;года. Выполняем срочные заказы и&nbsp;пилотные
           образцы до&nbsp;10&nbsp;дней.</p>
         <p>Наши поставщики&nbsp;&mdash; мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC,
-          REFOND. <span data-visibility="is-hidden-for-mobile">Печатные платы и&nbsp;комплектующие Service Devices применяются
-            на&nbsp;предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома,
+          REFOND. <span data-visibility="is-hidden-for-mobile">Печатные платы и&nbsp;комплектующие Service Devices
+            применяются на&nbsp;предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома,
             СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
         <p data-visibility="is-hidden">Smart Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более
           1&nbsp;000&nbsp;000&nbsp;клиентов, 70% из&nbsp;которых продолжают сотрудничество
@@ -125,6 +127,54 @@
           <span data-expand="text-hidden">Подробнее</span>
           <span data-expand="text-shown">Свернуть</span>
         </button>
+      </section>
+
+      <section class="services">
+        <div class="container">
+          <h2 class="services__title services__title--not-mobile">Smart Device предлагает следующие товары и&nbsp;услуги</h2>
+          <h2 class="services__title services__title--mobile">Товары и&nbsp;услуги<br> Smart Device</h2>
+          <ul class="services__list">
+            <li>
+              <a class="service" href="production.html">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="./img/services/production-mobile.webp 1x, ./img/services/production-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="./img/services/production-tablet.webp 1x, ./img/services/production-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/services/production-desktop.webp 1x, ./img/services/production-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="./img/services/production-mobile.jpg 1x, ./img/services/production-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)" srcset="./img/services/production-tablet.jpg 1x, ./img/services/production-tablet@2x.jpg 2x">
+                  <img class="service__image" width="350" height="650" src="./img/services/production-desktop.jpg" srcset="./img/services/production-desktop@2x.jpg 2x" alt="Крупный план печатной платы.">
+                </picture>
+                <h3 class="service__title">Производство<br> печатных плат</h3>
+              </a>
+            </li>
+            <li>
+              <a class="service" href="assembling.html">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="./img/services/assembling-mobile.webp 1x, ./img/services/assembling-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="./img/services/assembling-tablet.webp 1x, ./img/services/assembling-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/services/assembling-desktop.webp 1x, ./img/services/assembling-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="./img/services/assembling-mobile.jpg 1x, ./img/services/assembling-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)" srcset="./img/services/assembling-tablet.jpg 1x, ./img/services/assembling-tablet@2x.jpg 2x">
+                  <img class="service__image" width="350" height="650" src="./img/services/assembling-desktop.jpg" srcset="./img/services/assembling-desktop.jpg 2x" alt="Крупный план печатной платы.">
+                </picture>
+                <h3 class="service__title">Монтаж <br class="service__title-br service__title-br--not-desktop">печатных <br class="service__title-br service__title-br--desktop">плат</h3>
+              </a>
+            </li>
+            <li>
+              <a class="service" href="accessories.html">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="./img/services/accessories-mobile.webp 1x, ./img/services/accessories-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="./img/services/accessories-tablet.webp 1x, ./img/services/accessories-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/services/accessories-desktop.webp 1x, ./img/services/accessories-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="./img/services/accessories-mobile.jpg 1x, ./img/services/accessories-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)" srcset="./img/services/accessories-tablet.jpg 1x, ./img/services/accessories-tablet@2x.jpg 2x">
+                  <img class="service__image" width="350" height="650" src="./img/services/accessories-desktop.jpg" srcset="./img/services/accessories-desktop.jpg 2x" alt="Крупный план печатной платы.">
+                </picture>
+                <h3 class="service__title">Комплектующие<br> для светотехники</h3>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 

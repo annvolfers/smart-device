@@ -1,0 +1,114 @@
+.service {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 47px 40px 107px;
+  overflow: hidden;
+
+  @include vp-1023 {
+    padding: 37px 45px 100px;
+  }
+
+  @include vp-767 {
+    padding: 26px 30px 70px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $color-black-pearl--light--50;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    right: 1px;
+    bottom: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $color-deep-sky-blue--dark;
+    border-radius: 3px 0 0 0;
+    background-image: url("../../img/svg/arrow.svg");
+    background-repeat: no-repeat;
+    background-size: 5px 8px;
+    background-position: center;
+
+    @include vp-1023 {
+      right: 0;
+    }
+
+    @include vp-767 {
+      width: 40px;
+      height: 40px;
+      background-size: 3px 6px;
+    }
+  }
+
+  &:hover {
+    &::after {
+      background-color: $color-deep-sky-blue--dark-70;
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-deep-sky-blue--dark;
+    outline-offset: 4px;
+  }
+}
+
+.service__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: $color-black-pearl--light;
+}
+
+.service:hover .service__image {
+  transform: scale(1.1);
+  transition: $trans-600;
+}
+
+.service:active .service__image {
+  opacity: 0.5;
+}
+
+.service__title {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: $color-default-white;
+
+  @include vp-767 {
+    font-size: 18px;
+  }
+}
+
+.service__title-br {
+  &--desktop {
+    @include vp-1023 {
+      display: none;
+    }
+  }
+
+  &--not-desktop {
+    display: none;
+
+    @include vp-1023 {
+      display: inline;
+    }
+  }
+}

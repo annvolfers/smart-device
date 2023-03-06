@@ -30,9 +30,6 @@ export class ExpandButtons {
     const hiddenTexts = element.querySelectorAll('[data-visibility="is-hidden"], [data-visibility="is-hidden-for-mobile"]');
     const buttonTextShown = element.querySelector('[data-expand="text-shown"]');
 
-    const blockClass = element.classList[0];
-    element.classList.remove(`${blockClass}--nojs`);
-
     buttonTextShown.classList.add('is-hidden');
 
     hiddenTexts.forEach((hiddenText) => {

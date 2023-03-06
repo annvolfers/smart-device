@@ -1715,7 +1715,9 @@ button,
   min-height: 420px;
   padding-left: 300px;
   padding-bottom: 120px;
-  background-image: url(../../img/2022.png);
+  background-image: -webkit-image-set(url("../../img/2022@2x.webp") 2x, url("../../img/2022.webp") 1x, url("../../img/2022@2x.png") 2x, url("../../img/2022.png") 1x);
+  background-image: image-set(url("../../img/2022@2x.webp") 2x, url("../../img/2022.webp") 1x, url("../../img/2022@2x.png") 2x, url("../../img/2022.png") 1x);
+  background-size: 150px 320px;
   background-repeat: no-repeat;
   background-position: 50px 0;
 }
@@ -1751,8 +1753,9 @@ button,
   border-radius: 3px;
 }
 
-.about--nojs .about__button {
-  display: none;
+.about__button:hover {
+  color: #f8fdff;
+  background-color: #00b2ff;
 }
 
 /* Expand */
@@ -1780,6 +1783,123 @@ button,
 }
 
 [data-expand=button] > [data-expand^=text-].is-hidden {
+  display: none;
+}
+
+.services {
+  padding-top: 65px;
+  padding-bottom: 140px;
+  background-color: #041827;
+}
+
+.services__title {
+  margin: 0;
+  margin-bottom: 54px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: #ffffff;
+}
+
+.services__title--mobile {
+  display: none;
+}
+
+.services__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: minmax(650px, auto);
+  grid-template-rows: minmax(650px, auto);
+  grid-auto-rows: minmax(650px, auto);
+  gap: 85px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.service {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 47px 40px 107px;
+  overflow: hidden;
+}
+
+.service::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(4, 24, 39, 0.5);
+}
+
+.service::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  right: 1px;
+  bottom: 0;
+  width: 60px;
+  height: 60px;
+  background-color: #00b2ff;
+  border-radius: 3px 0 0 0;
+  background-image: url("../../img/svg/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 5px 8px;
+  background-position: center;
+}
+
+.service:hover::after {
+  background-color: rgba(0, 178, 255, 0.7);
+}
+
+.service:focus-visible {
+  outline: 2px solid #00b2ff;
+  outline-offset: 4px;
+}
+
+.service__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background-color: #041827;
+}
+
+.service:hover .service__image {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: 0.6s ease;
+  -o-transition: 0.6s ease;
+  transition: 0.6s ease;
+}
+
+.service:active .service__image {
+  opacity: 0.5;
+}
+
+.service__title {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.service__title-br--not-desktop {
   display: none;
 }
 
@@ -1998,6 +2118,40 @@ button,
 
   .about__button {
     margin-top: 17px;
+  }
+
+  .services {
+    padding-top: 55px;
+    padding-bottom: 75px;
+  }
+
+  .services__title {
+    margin-bottom: 38px;
+  }
+
+  .services__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: minmax(250px, auto);
+    grid-template-rows: minmax(250px, auto);
+    grid-auto-rows: minmax(250px, auto);
+    gap: 30px;
+  }
+
+  .service {
+    padding: 37px 45px 100px;
+  }
+
+  .service::after {
+    right: 0;
+  }
+
+  .service__title-br--desktop {
+    display: none;
+  }
+
+  .service__title-br--not-desktop {
+    display: inline;
   }
 }
 
@@ -2304,6 +2458,38 @@ button,
 
   [data-setting=expand-for-mobile-only] > [data-expand=button] {
     display: inline-block;
+  }
+
+  .services {
+    padding: 47px 25px 86px;
+  }
+
+  .services__title {
+    margin-bottom: 29px;
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .services__title--not-mobile {
+    display: none;
+  }
+
+  .services__title--mobile {
+    display: block;
+  }
+
+  .service {
+    padding: 26px 30px 70px;
+  }
+
+  .service::after {
+    width: 40px;
+    height: 40px;
+    background-size: 3px 6px;
+  }
+
+  .service__title {
+    font-size: 18px;
   }
 }
 
