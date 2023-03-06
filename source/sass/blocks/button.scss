@@ -27,11 +27,15 @@
 
 .button {
   display: inline-block;
+  padding: 0;
   font-weight: 700;
   letter-spacing: 0.05em;
   text-align: center;
   text-transform: uppercase;
+  border: none;
   border-radius: 3px;
+  background-color: transparent;
+  cursor: pointer;
   user-select: none;
 
   &:focus-visible {
