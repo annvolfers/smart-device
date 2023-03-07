@@ -1,6 +1,15 @@
+import {sendData} from './api';
+import {showMessage} from './message';
 
 const baseSuccessCallback = (event) => {
   event.preventDefault();
+
+  sendData(
+      () => showMessage('success'),
+      () => showMessage('error'),
+      new FormData(event.target)
+  );
+
   // В данном колбеке бэкендер, либо разработчик при необходимости будет писать запрос на отправку формы на сервер и обрабатывать возможные ошибки или успешную отправку формы на сервер
 };
 

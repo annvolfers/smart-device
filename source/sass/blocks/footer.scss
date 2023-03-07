@@ -1,10 +1,11 @@
 .footer {
-  padding-top: 50px;
+  padding-top: 51px;
   padding-bottom: 55px;
   background-color: $color-black-pearl--light;
 
   @include vp-1023 {
-    padding-bottom: 53px;
+    padding-top: 50px;
+    padding-bottom: 54px;
   }
 
   @include vp-767 {

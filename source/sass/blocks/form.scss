@@ -1,0 +1,318 @@
+.form {
+  position: relative;
+  background-color: $color-deep-sky-blue;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 972px;
+    background-color: $color-black-pearl--light-50;
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+
+    @include vp-1023 {
+      display: none;
+    }
+  }
+}
+
+.form__container {
+  position: relative;
+  z-index: 2;
+  padding-top: 165px;
+  padding-bottom: 247px;
+
+  @include desktop-only {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 510px;
+      height: 285px;
+      margin-top: 20px;
+      background-image: image-set(url("../../img/paper_airplane@2x.webp") 2x,
+          url("../../img/paper_airplane.webp") 1x,
+          url("../../img/paper_airplane@2x.png") 2x,
+          url("../../img/paper_airplane.png") 1x);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+
+  @include vp-1023 {
+    padding-top: 45px;
+    padding-bottom: 123px;
+  }
+
+  @include vp-767 {
+    padding: 47px 25px 89px;
+  }
+}
+
+.form__wrapper {
+  @include desktop-only {
+    flex-shrink: 0;
+    flex-basis: 595px;
+    margin: 0;
+    margin-left: auto;
+  }
+}
+
+.form__title {
+  margin: 0;
+  margin-bottom: 11px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $color-default-white;
+
+  @include vp-1023 {
+    margin-bottom: 7px;
+  }
+
+  @include vp-767 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+}
+
+.form__text {
+  margin: 0;
+  margin-bottom: 36px;
+  margin-left: 5px;
+  font-family: $ff-pt-mono;
+  color: $color-default-white;
+
+  @include vp-1023 {
+    margin-bottom: 25px;
+    margin-left: 0;
+  }
+
+  @include vp-767 {
+    margin-bottom: 34px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+.form__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 30px;
+  margin: 0;
+  padding: 0 10px 0 5px;
+
+  @include vp-1023 {
+    padding: 0;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form__field {
+  margin: 0;
+
+  &--textarea {
+    grid-column: 1 / -1;
+  }
+}
+
+.form__field input,
+.form__field textarea {
+  width: 100%;
+  padding: 11px 13px 13px;
+  font-family: $ff-pt-mono;
+  line-height: 22px;
+  color: $color-black-pearl;
+  background-color: $color-pacific-blue;
+  border: 2px solid transparent;
+  border-radius: 3px;
+
+  &::placeholder {
+    color: $color-default-white;
+  }
+
+  &:hover {
+    border: 2px solid $color-black-pearl--light-50;
+  }
+
+  &:focus {
+    border: 2px solid $color-black-pearl--dark;
+    outline: none;
+  }
+}
+
+.form__field.is-invalid input,
+.form__field.is-invalid textarea {
+  color: $color-mexican-red;
+  border-color: $color-red;
+}
+
+.form__field textarea {
+  min-height: 155px;
+  padding: 21px 13px;
+
+  @include vp-1023 {
+    padding: 28px 13px;
+  }
+
+  @include vp-767 {
+    min-height: 180px;
+    padding: 21px 13px;
+  }
+}
+
+.form__checkbox {
+  order: 1;
+  align-self: self-end;
+  margin: 0;
+  margin-left: 10px;
+
+  @include vp-1023 {
+    margin-left: 0;
+    margin-bottom: 5px;
+  }
+
+  @include vp-767 {
+    margin: 0;
+    margin-left: 5px;
+  }
+}
+
+.form__checkbox label {
+  position: relative;
+  display: block;
+  padding-left: 26px;
+  font-family: $ff-pt-mono;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
+  cursor: pointer;
+}
+
+.form__checkbox-mark {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid $color-default-white;
+  border-radius: 2px;
+  transform: translateY(-50%);
+}
+
+.form__checkbox.is-invalid .form__checkbox-mark,
+.form__checkbox.is-invalid .form__checkbox-mark {
+  border-color: $color-red;
+}
+
+.form__checkbox input:checked+.form__checkbox-mark {
+  display: none;
+}
+
+.form__checkbox input:hover+.form__checkbox-mark,
+.form__checkbox input:focus+.form__checkbox-mark {
+  border-color: $color-black-pearl;
+}
+
+.form__checkbox-icon {
+  display: none;
+}
+
+.form__checkbox input:checked~.form__checkbox-icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 15px;
+  height: 15px;
+  color: $color-default-white;
+  transform: translateY(-50%);
+}
+
+.form__checkbox input:hover~.form__checkbox-icon,
+.form__checkbox input:focus~.form__checkbox-icon {
+  color: $color-black-pearl;
+}
+
+.form__checkbox-label {
+  opacity: 0.8;
+}
+
+.form__checkbox.is-invalid .form__checkbox-label {
+  color: $color-red;
+}
+
+.form__button {
+  max-width: 265px;
+  margin: 9px 0 2px;
+  padding: 15px 25px 11px 25px;
+  line-height: 19px;
+  color: $color-default-white;
+  background-color: $color-black-pearl;
+
+  &:hover {
+    background-color: $color-black-pearl--light-50;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-black-pearl;
+  }
+
+  &:disabled {
+    background-color: $color-silver;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  @include vp-1023 {
+    padding: 16px 25px 10px;
+  }
+
+  @include vp-767 {
+    max-width: unset;
+    margin: 4px 0;
+  }
+}
+
+.form__message-wrapper {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  display: flex;
+  margin: 25px;
+  padding: 20px 30px;
+  background-color: $color-shamrock-green;
+  border-radius: 3px;
+  cursor: pointer;
+
+  &--error {
+    background-color: $color-mexican-red;
+  }
+
+  @include vp-1023 {
+    max-width: 50%;
+  }
+
+  @include vp-767 {
+    max-width: unset;
+    margin: 15px;
+  }
+}
+
+.form__message {
+  margin: 0;
+  font-family: $ff-pt-mono;
+  color: $color-default-white;
+  text-align: center;
+}

@@ -63,7 +63,7 @@
           <h1 class="intro__title">Печатные платы</h1>
           <p class="intro__description">производство и&nbsp;монтаж, поставка комплектующих, <br>блоков и&nbsp;модулей
           </p>
-          <a class="intro__button button" href="form.html">
+          <a class="intro__button button" href="#form">
             <span class="intro__button-text intro__button-text--not-mobile">Получить бесплатную консультацию</span>
             <span class="intro__button-text intro__button-text--mobile">бесплатная консультация</span>
           </a>
@@ -123,7 +123,7 @@
         <p data-visibility="is-hidden">Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества
           продукции, производимой внутри компании. Использование инновационных
           технологий помогает экономить деньги и&nbsp;время наших клиентов</p>
-        <button class="about__button button" data-expand="button">
+        <button class="about__button button" type="button" data-expand="button">
           <span data-expand="text-hidden">Подробнее</span>
           <span data-expand="text-shown">Свернуть</span>
         </button>
@@ -131,18 +131,25 @@
 
       <section class="services">
         <div class="container">
-          <h2 class="services__title services__title--not-mobile">Smart Device предлагает следующие товары и&nbsp;услуги</h2>
+          <h2 class="services__title services__title--not-mobile">Smart Device предлагает следующие товары и&nbsp;услуги
+          </h2>
           <h2 class="services__title services__title--mobile">Товары и&nbsp;услуги<br> Smart Device</h2>
           <ul class="services__list">
             <li>
               <a class="service" href="production.html">
                 <picture>
-                  <source type="image/webp" media="(max-width: 767px)" srcset="./img/services/production-mobile.webp 1x, ./img/services/production-mobile@2x.webp 2x">
-                  <source type="image/webp" media="(max-width: 1023px)" srcset="./img/services/production-tablet.webp 1x, ./img/services/production-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="./img/services/production-desktop.webp 1x, ./img/services/production-desktop@2x.webp 2x">
-                  <source media="(max-width: 767px)" srcset="./img/services/production-mobile.jpg 1x, ./img/services/production-mobile@2x.jpg 2x">
-                  <source media="(max-width: 1023px)" srcset="./img/services/production-tablet.jpg 1x, ./img/services/production-tablet@2x.jpg 2x">
-                  <img class="service__image" width="350" height="650" src="./img/services/production-desktop.jpg" srcset="./img/services/production-desktop@2x.jpg 2x" alt="Крупный план печатной платы.">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/services/production-mobile.webp 1x, ./img/services/production-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="./img/services/production-tablet.webp 1x, ./img/services/production-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="./img/services/production-desktop.webp 1x, ./img/services/production-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="./img/services/production-mobile.jpg 1x, ./img/services/production-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="./img/services/production-tablet.jpg 1x, ./img/services/production-tablet@2x.jpg 2x">
+                  <img class="service__image" width="350" height="650" src="./img/services/production-desktop.jpg"
+                    srcset="./img/services/production-desktop@2x.jpg 2x" alt="Крупный план печатной платы.">
                 </picture>
                 <h3 class="service__title">Производство<br> печатных плат</h3>
               </a>
@@ -150,30 +157,80 @@
             <li>
               <a class="service" href="assembling.html">
                 <picture>
-                  <source type="image/webp" media="(max-width: 767px)" srcset="./img/services/assembling-mobile.webp 1x, ./img/services/assembling-mobile@2x.webp 2x">
-                  <source type="image/webp" media="(max-width: 1023px)" srcset="./img/services/assembling-tablet.webp 1x, ./img/services/assembling-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="./img/services/assembling-desktop.webp 1x, ./img/services/assembling-desktop@2x.webp 2x">
-                  <source media="(max-width: 767px)" srcset="./img/services/assembling-mobile.jpg 1x, ./img/services/assembling-mobile@2x.jpg 2x">
-                  <source media="(max-width: 1023px)" srcset="./img/services/assembling-tablet.jpg 1x, ./img/services/assembling-tablet@2x.jpg 2x">
-                  <img class="service__image" width="350" height="650" src="./img/services/assembling-desktop.jpg" srcset="./img/services/assembling-desktop.jpg 2x" alt="Крупный план печатной платы.">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/services/assembling-mobile.webp 1x, ./img/services/assembling-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="./img/services/assembling-tablet.webp 1x, ./img/services/assembling-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="./img/services/assembling-desktop.webp 1x, ./img/services/assembling-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="./img/services/assembling-mobile.jpg 1x, ./img/services/assembling-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="./img/services/assembling-tablet.jpg 1x, ./img/services/assembling-tablet@2x.jpg 2x">
+                  <img class="service__image" width="350" height="650" src="./img/services/assembling-desktop.jpg"
+                    srcset="./img/services/assembling-desktop.jpg 2x" alt="Крупный план печатной платы.">
                 </picture>
-                <h3 class="service__title">Монтаж <br class="service__title-br service__title-br--not-desktop">печатных <br class="service__title-br service__title-br--desktop">плат</h3>
+                <h3 class="service__title">Монтаж <br class="service__title-br service__title-br--not-desktop">печатных
+                  <br class="service__title-br service__title-br--desktop">плат
+                </h3>
               </a>
             </li>
             <li>
               <a class="service" href="accessories.html">
                 <picture>
-                  <source type="image/webp" media="(max-width: 767px)" srcset="./img/services/accessories-mobile.webp 1x, ./img/services/accessories-mobile@2x.webp 2x">
-                  <source type="image/webp" media="(max-width: 1023px)" srcset="./img/services/accessories-tablet.webp 1x, ./img/services/accessories-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="./img/services/accessories-desktop.webp 1x, ./img/services/accessories-desktop@2x.webp 2x">
-                  <source media="(max-width: 767px)" srcset="./img/services/accessories-mobile.jpg 1x, ./img/services/accessories-mobile@2x.jpg 2x">
-                  <source media="(max-width: 1023px)" srcset="./img/services/accessories-tablet.jpg 1x, ./img/services/accessories-tablet@2x.jpg 2x">
-                  <img class="service__image" width="350" height="650" src="./img/services/accessories-desktop.jpg" srcset="./img/services/accessories-desktop.jpg 2x" alt="Крупный план печатной платы.">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/services/accessories-mobile.webp 1x, ./img/services/accessories-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="./img/services/accessories-tablet.webp 1x, ./img/services/accessories-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="./img/services/accessories-desktop.webp 1x, ./img/services/accessories-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="./img/services/accessories-mobile.jpg 1x, ./img/services/accessories-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="./img/services/accessories-tablet.jpg 1x, ./img/services/accessories-tablet@2x.jpg 2x">
+                  <img class="service__image" width="350" height="650" src="./img/services/accessories-desktop.jpg"
+                    srcset="./img/services/accessories-desktop.jpg 2x" alt="Крупный план печатной платы.">
                 </picture>
                 <h3 class="service__title">Комплектующие<br> для светотехники</h3>
               </a>
             </li>
           </ul>
+        </div>
+      </section>
+
+      <section class="form" id="form">
+        <div class="form__container container">
+          <div class="form__wrapper" data-form-validate="data-form-validate" data-callback="base">
+            <h2 class="form__title">Остались вопросы? Задайте их&nbsp;нам!</h2>
+            <p class="form__text">Мы&nbsp;проконсультируем Вас бесплатно</p>
+            <form class="form__content" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="form__field" data-validate-type="text" data-limitation="name" data-required="data-required">
+                <label class="visually-hidden" for="name">Имя</label>
+                <input type="text" name="name" id="name" placeholder="Имя" required>
+              </p>
+              <p class="form__field" data-validate-type="phone" data-on-input-validate="data-on-input-validate"
+                data-required="data-required">
+                <label class="visually-hidden" for="phone">Телефон</label>
+                <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
+              </p>
+              <p class="form__field form__field--textarea" data-validate-type="text">
+                <label class="visually-hidden" for="question">Ваш вопрос</label>
+                <textarea name="question" id="question" placeholder="Ваш вопрос"></textarea>
+              </p>
+              <p class="form__checkbox" data-validate-type="checkbox">
+                <label>
+                  <input class="visually-hidden" type="checkbox" name="agreement" checked required>
+                  <span class="form__checkbox-mark"></span>
+                  <svg class="form__checkbox-icon" width="15" height="15" aria-hidden="true" focusable="false"
+                    fill="currentColor">
+                    <use href="./img/sprite.svg#checkbox" />
+                  </svg>
+                  <span class="form__checkbox-label">Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
+                </label>
+              </p>
+              <button class="form__button button" type="submit">Задать вопрос</button>
+            </form>
+          </div>
         </div>
       </section>
     </main>
@@ -266,6 +323,20 @@
       </div>
     </footer>
   </div>
+
+  <!-- Сообщение об успешной отправке формы -->
+  <template id="success">
+    <div class="form__message-wrapper">
+      <p class="form__message">Успешно отправлено</p>
+    </div>
+  </template>
+
+  <!-- Сообщение об ошибке отправки формы -->
+  <template id="error">
+    <div class="form__message-wrapper form__message-wrapper--error">
+      <p class="form__message">При отправке произошла ошибка. Пожалуйста, повторите позже</p>
+    </div>
+  </template>
 
   <!-- Модалки -->
   <!-- <div class="modal modal--preload" data-modal="feedback">
