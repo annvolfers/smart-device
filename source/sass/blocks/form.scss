@@ -1,20 +1,20 @@
 .form {
   position: relative;
   background-color: $color-deep-sky-blue;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    display: block;
-    width: 972px;
-    background-color: $color-black-pearl--light-50;
-    clip-path: polygon(0 0, 0% 100%, 100% 0);
-
-    @include vp-1023 {
-      display: none;
+.form:not(.form--modal) {
+  @include desktop-only {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      display: block;
+      width: 972px;
+      background-color: $color-black-pearl--light-50;
+      clip-path: polygon(0 0, 0% 100%, 100% 0);
     }
   }
 }
@@ -83,6 +83,13 @@
   }
 }
 
+.form--modal .form__title {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 30px;
+  line-height: 42px;
+}
+
 .form__text {
   margin: 0;
   margin-bottom: 36px;
@@ -102,6 +109,19 @@
   }
 }
 
+.form--modal .form__text {
+  margin: 0;
+  margin-bottom: 37px;
+  padding-right: 20px;
+  font-size: 16px;
+  line-height: 22px;
+
+  @include vp-767 {
+    margin-bottom: 20px;
+    padding: 0;
+  }
+}
+
 .form__content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -116,6 +136,12 @@
   @include vp-767 {
     grid-template-columns: 1fr;
   }
+}
+
+.form--modal .form__content {
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 0;
 }
 
 .form__field {
@@ -172,7 +198,6 @@
 }
 
 .form__checkbox {
-  order: 1;
   align-self: self-end;
   margin: 0;
   margin-left: 10px;
@@ -282,37 +307,11 @@
     max-width: unset;
     margin: 4px 0;
   }
+
+  transition: background-color $trans-default;
 }
 
-.form__message-wrapper {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  z-index: 5;
-  display: flex;
-  margin: 25px;
-  padding: 20px 30px;
-  background-color: $color-shamrock-green;
-  border-radius: 3px;
-  cursor: pointer;
-
-  &--error {
-    background-color: $color-mexican-red;
-  }
-
-  @include vp-1023 {
-    max-width: 50%;
-  }
-
-  @include vp-767 {
-    max-width: unset;
-    margin: 15px;
-  }
-}
-
-.form__message {
+.form--modal .form__button {
+  max-width: unset;
   margin: 0;
-  font-family: $ff-pt-mono;
-  color: $color-default-white;
-  text-align: center;
 }

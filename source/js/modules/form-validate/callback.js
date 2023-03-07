@@ -1,12 +1,27 @@
 import {sendData} from './api';
-import {showMessage} from './message';
+import {modals} from '../modals/init-modals';
 
 const baseSuccessCallback = (event) => {
   event.preventDefault();
 
+  let modalName;
+  if (event.target.closest('[data-modal]')) {
+    modalName = event.target.closest('[data-modal]').getAttribute('data-modal');
+  }
+
   sendData(
-      () => showMessage('success'),
-      () => showMessage('error'),
+      () => {
+        if (modalName) {
+          modals.close(modalName);
+        }
+        // другие действия при успешной отправке формы
+      },
+      () => {
+        if (modalName) {
+          modals.close(modalName);
+        }
+        // другие действия при ошибке отправки формы
+      },
       new FormData(event.target)
   );
 
