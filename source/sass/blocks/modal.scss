@@ -13,12 +13,10 @@
 
   background-color: $color-black-pearl--dark-70;
   transform: scale(1.2);
-  visibility: hidden;
   opacity: 0;
 
   transition: opacity $trans-modal,
-    transform $trans-modal,
-    visibility $trans-modal;
+    transform $trans-modal;
 
   pointer-events: none;
 
@@ -31,7 +29,6 @@
 
   &.is-active {
     transform: scale(1);
-    visibility: visible;
     opacity: 1;
 
     pointer-events: auto;

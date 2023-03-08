@@ -204,21 +204,24 @@
             <h2 class="form__title">Остались вопросы? Задайте их&nbsp;нам!</h2>
             <p class="form__text">Мы&nbsp;проконсультируем Вас бесплатно</p>
             <form class="form__content" action="https://echo.htmlacademy.ru/" method="post">
-              <p class="form__field" data-validate-type="text" data-limitation="name" data-required="data-required">
-                <label class="visually-hidden" for="name">Имя</label>
-                <input type="text" name="name" id="name" placeholder="Имя" required>
-              </p>
-              <p class="form__field" data-validate-type="phone" data-on-input-validate="data-on-input-validate"
+              <label data-validate-type="text" data-on-input-validate="data-on-input-validate" data-limitation="name"
                 data-required="data-required">
-                <label class="visually-hidden" for="phone">Телефон</label>
-                <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
-              </p>
-              <p class="form__field form__field--textarea" data-validate-type="text">
-                <label class="visually-hidden" for="question">Ваш вопрос</label>
-                <textarea name="question" id="question" placeholder="Ваш вопрос"></textarea>
+                <span class="visually-hidden">Имя</span>
+                <input type="text" name="name" placeholder="Имя" required>
+              </label>
+              <label data-validate-type="phone" data-on-input-validate="data-on-input-validate"
+                data-required="data-required">
+                <span class="visually-hidden">Телефон</span>
+                <input type="tel" name="phone" placeholder="Телефон" required>
+              </label>
+              <p class="form__textarea">
+                <label data-validate-type="text">
+                  <span class="visually-hidden">Ваш вопрос</span>
+                  <textarea name="question" placeholder="Ваш вопрос"></textarea>
+                </label>
               </p>
               <button class="form__button button" type="submit">Задать вопрос</button>
-              <p class="form__checkbox" data-validate-type="checkbox">
+              <p class="form__checkbox" data-validate-type="checkbox" data-on-input-validate="data-on-input-validate">
                 <label>
                   <input class="visually-hidden" type="checkbox" name="agreement" checked required>
                   <span class="form__checkbox-mark"></span>
@@ -332,21 +335,24 @@
         <h2 class="form__title">Закажите звонок</h2>
         <p class="form__text">Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное время</p>
         <form class="form__content" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="form__field" data-validate-type="text" data-limitation="name" data-focus data-required="data-required">
-            <label class="visually-hidden" for="name">Имя</label>
-            <input type="text" name="name" id="name" placeholder="Имя" required>
-          </p>
-          <p class="form__field" data-validate-type="phone" data-on-input-validate="data-on-input-validate"
+          <label data-validate-type="text" data-on-input-validate="data-on-input-validate" data-limitation="name"
             data-required="data-required">
-            <label class="visually-hidden" for="phone">Телефон</label>
-            <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
+            <span class="visually-hidden">Имя</span>
+            <input type="text" name="name" placeholder="Имя" required>
+          </label>
+          <label data-validate-type="phone" data-on-input-validate="data-on-input-validate"
+            data-required="data-required">
+            <span class="visually-hidden">Телефон</span>
+            <input type="tel" name="phone" placeholder="Телефон" required>
+          </label>
+          <p class="form__textarea">
+            <label data-validate-type="text">
+              <span class="visually-hidden">Ваш вопрос</span>
+              <textarea name="question" placeholder="Ваш вопрос"></textarea>
+            </label>
           </p>
-          <p class="form__field form__field--textarea" data-validate-type="text">
-            <label class="visually-hidden" for="question">Ваш вопрос</label>
-            <textarea name="question" id="question" placeholder="Ваш вопрос"></textarea>
-          </p>
-          <button class="form__button button" type="submit">Отправить</button>
-          <p class="form__checkbox" data-validate-type="checkbox">
+          <button class="form__button button" type="submit">Задать вопрос</button>
+          <p class="form__checkbox" data-validate-type="checkbox" data-on-input-validate="data-on-input-validate">
             <label>
               <input class="visually-hidden" type="checkbox" name="agreement" checked required>
               <span class="form__checkbox-mark"></span>

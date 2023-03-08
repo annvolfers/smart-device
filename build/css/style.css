@@ -683,13 +683,12 @@ button,
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
-  visibility: hidden;
   opacity: 0;
-  -webkit-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  -o-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  -webkit-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  -o-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   pointer-events: none;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -703,7 +702,6 @@ button,
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-  visibility: visible;
   opacity: 1;
   pointer-events: auto;
 }
@@ -1468,16 +1466,13 @@ button,
   padding: 0;
 }
 
-.form__field {
+.form__textarea {
   margin: 0;
-}
-
-.form__field--textarea {
   grid-column: 1/-1;
 }
 
-.form__field input,
-.form__field textarea {
+.form input,
+.form textarea {
   width: 100%;
   padding: 11px 13px 13px;
   font-family: "PT Mono", "Courier New", monospace;
@@ -1488,49 +1483,49 @@ button,
   border-radius: 3px;
 }
 
-.form__field input::-webkit-input-placeholder,
-.form__field textarea::-webkit-input-placeholder {
+.form input::-webkit-input-placeholder,
+.form textarea::-webkit-input-placeholder {
   color: #ffffff;
 }
 
-.form__field input::-moz-placeholder,
-.form__field textarea::-moz-placeholder {
+.form input::-moz-placeholder,
+.form textarea::-moz-placeholder {
   color: #ffffff;
 }
 
-.form__field input:-ms-input-placeholder,
-.form__field textarea:-ms-input-placeholder {
+.form input:-ms-input-placeholder,
+.form textarea:-ms-input-placeholder {
   color: #ffffff;
 }
 
-.form__field input::-ms-input-placeholder,
-.form__field textarea::-ms-input-placeholder {
+.form input::-ms-input-placeholder,
+.form textarea::-ms-input-placeholder {
   color: #ffffff;
 }
 
-.form__field input::placeholder,
-.form__field textarea::placeholder {
+.form input::placeholder,
+.form textarea::placeholder {
   color: #ffffff;
 }
 
-.form__field input:hover,
-.form__field textarea:hover {
+.form input:hover,
+.form textarea:hover {
   border: 2px solid rgba(4, 24, 39, 0.5);
 }
 
-.form__field input:focus,
-.form__field textarea:focus {
+.form input:focus,
+.form textarea:focus {
   border: 2px solid #03101b;
   outline: none;
 }
 
-.form__field.is-invalid input,
-.form__field.is-invalid textarea {
+.form label.is-invalid input,
+.form label.is-invalid textarea {
   color: #9b3e3e;
   border-color: #ff0000;
 }
 
-.form__field textarea {
+.form__textarea textarea {
   min-height: 155px;
   padding: 21px 13px;
 }
@@ -1953,7 +1948,7 @@ button,
     padding: 0;
   }
 
-  .form__field textarea {
+  .form__textarea textarea {
     padding: 28px 13px;
   }
 
@@ -2325,7 +2320,7 @@ button,
     grid-template-columns: 1fr;
   }
 
-  .form__field textarea {
+  .form__textarea textarea {
     min-height: 180px;
     padding: 21px 13px;
   }

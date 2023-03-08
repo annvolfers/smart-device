@@ -144,16 +144,13 @@
   padding: 0;
 }
 
-.form__field {
+.form__textarea {
   margin: 0;
-
-  &--textarea {
-    grid-column: 1 / -1;
-  }
+  grid-column: 1 / -1;
 }
 
-.form__field input,
-.form__field textarea {
+.form input,
+.form textarea {
   width: 100%;
   padding: 11px 13px 13px;
   font-family: $ff-pt-mono;
@@ -177,13 +174,13 @@
   }
 }
 
-.form__field.is-invalid input,
-.form__field.is-invalid textarea {
+.form label.is-invalid input,
+.form label.is-invalid textarea {
   color: $color-mexican-red;
   border-color: $color-red;
 }
 
-.form__field textarea {
+.form__textarea textarea {
   min-height: 155px;
   padding: 21px 13px;
 
