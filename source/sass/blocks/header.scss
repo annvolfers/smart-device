@@ -1,11 +1,19 @@
 .header {
-  position: absolute;
+  position: relative;
   z-index: 10;
   width: 100%;
   background-image: $black-pearl-light-to-bottom;
 
   @include desktop-only {
     position: fixed;
+  }
+
+  @include vp-1023 {
+    min-height: $default-header-height-tablet;
+  }
+
+  @include vp-767 {
+    min-height: $default-header-height-mobile;
   }
 }
 

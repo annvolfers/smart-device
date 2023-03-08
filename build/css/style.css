@@ -791,7 +791,7 @@ button,
 }
 
 .header {
-  position: absolute;
+  position: relative;
   z-index: 10;
   width: 100%;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
@@ -1755,6 +1755,10 @@ button,
 }
 
 @media (max-width: 1023px) {
+  .header {
+    min-height: 100px;
+  }
+
   .header__container {
     padding-top: 20px;
     padding-bottom: 25px;
@@ -1830,6 +1834,7 @@ button,
   }
 
   .intro {
+    margin-top: -100px;
     padding-top: 180px;
     padding-bottom: 205px;
   }
@@ -1974,6 +1979,10 @@ button,
   .modal__content {
     width: 100%;
     padding: 50px 20px 40px;
+  }
+
+  .header {
+    min-height: 70px;
   }
 
   .header__container {
@@ -2137,6 +2146,7 @@ button,
   }
 
   .intro {
+    margin-top: -70px;
     padding: 150px 25px 190px;
   }
 
