@@ -36,10 +36,10 @@
       width: 510px;
       height: 285px;
       margin-top: 20px;
-      background-image: image-set(url("../../img/paper_airplane@2x.webp") 2x,
-          url("../../img/paper_airplane.webp") 1x,
-          url("../../img/paper_airplane@2x.png") 2x,
-          url("../../img/paper_airplane.png") 1x);
+      background-image: image-set(url("../../img/backgrounds/paper_airplane@2x.webp") 2x,
+          url("../../img/backgrounds/paper_airplane.webp") 1x,
+          url("../../img/backgrounds/paper_airplane@2x.png") 2x,
+          url("../../img/backgrounds/paper_airplane.png") 1x);
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
@@ -159,17 +159,18 @@
   background-color: $color-pacific-blue;
   border: 2px solid transparent;
   border-radius: 3px;
+  transition: border-color $trans-default;
 
   &::placeholder {
     color: $color-default-white;
   }
 
   &:hover {
-    border: 2px solid $color-black-pearl--light-50;
+    border-color: $color-black-pearl--light-50;
   }
 
   &:focus {
-    border: 2px solid $color-black-pearl--dark;
+    border-color: $color-black-pearl--dark;
     outline: none;
   }
 }
@@ -196,7 +197,6 @@
 
 .form__checkbox {
   align-self: self-end;
-  margin: 0;
   margin-left: 10px;
 
   @include vp-1023 {
@@ -230,27 +230,28 @@
   border: 1px solid $color-default-white;
   border-radius: 2px;
   transform: translateY(-50%);
+  transition: border-color $trans-default;
 }
 
-.form__checkbox.is-invalid .form__checkbox-mark,
 .form__checkbox.is-invalid .form__checkbox-mark {
   border-color: $color-red;
 }
 
-.form__checkbox input:checked+.form__checkbox-mark {
+.form__checkbox input:checked + .form__checkbox-mark {
   display: none;
 }
 
-.form__checkbox input:hover+.form__checkbox-mark,
-.form__checkbox input:focus+.form__checkbox-mark {
+.form__checkbox input:hover + .form__checkbox-mark,
+.form__checkbox input:focus + .form__checkbox-mark {
   border-color: $color-black-pearl;
 }
 
 .form__checkbox-icon {
   display: none;
+  transition: color $trans-default;
 }
 
-.form__checkbox input:checked~.form__checkbox-icon {
+.form__checkbox input:checked ~ .form__checkbox-icon {
   position: absolute;
   top: 50%;
   left: 0;
@@ -261,8 +262,8 @@
   transform: translateY(-50%);
 }
 
-.form__checkbox input:hover~.form__checkbox-icon,
-.form__checkbox input:focus~.form__checkbox-icon {
+.form__checkbox input:hover ~ .form__checkbox-icon,
+.form__checkbox input:focus ~ .form__checkbox-icon {
   color: $color-black-pearl;
 }
 
@@ -281,6 +282,7 @@
   line-height: 19px;
   color: $color-default-white;
   background-color: $color-black-pearl;
+  transition: background-color $trans-default;
 
   &:hover {
     background-color: $color-black-pearl--light-50;
@@ -304,8 +306,6 @@
     max-width: unset;
     margin: 4px 0;
   }
-
-  transition: background-color $trans-default;
 }
 
 .form--modal .form__button {

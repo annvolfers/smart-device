@@ -2,10 +2,10 @@
   min-height: 420px;
   padding-left: 300px;
   padding-bottom: 120px;
-  background-image: image-set(url("../../img/2022@2x.webp") 2x,
-      url("../../img/2022.webp") 1x,
-      url("../../img/2022@2x.png") 2x,
-      url("../../img/2022.png") 1x);
+  background-image: image-set(url("../../img/backgrounds/2022@2x.webp") 2x,
+      url("../../img/backgrounds/2022.webp") 1x,
+      url("../../img/backgrounds/2022@2x.png") 2x,
+      url("../../img/backgrounds/2022.png") 1x);
   background-size: 150px 320px;
   background-repeat: no-repeat;
   background-position: 50px 0;
@@ -39,7 +39,7 @@
 
 .about p {
   margin: 0;
-  font-family: 'PT Mono';
+  font-family: $ff-pt-mono;
   color: $color-black-pearl--light;
 
   @include vp-767 {
@@ -66,6 +66,7 @@
   color: $color-deep-sky-blue--dark;
   border: 1px solid $color-deep-sky-blue--dark;
   border-radius: 3px;
+  transition: color $trans-default, background-color $trans-default;
 
   @include vp-1023 {
     margin-top: 17px;
@@ -95,11 +96,11 @@
   }
 }
 
-[data-setting="not-expand"]>[data-expand="button"] {
+[data-setting="not-expand"] > [data-expand="button"] {
   display: none;
 }
 
-[data-setting="expand-for-mobile-only"]>[data-expand="button"] {
+[data-setting="expand-for-mobile-only"] > [data-expand="button"] {
   display: none;
 
   @include vp-767 {
@@ -107,6 +108,6 @@
   }
 }
 
-[data-expand="button"]>[data-expand^="text-"].is-hidden {
+[data-expand="button"] > [data-expand^="text-"].is-hidden {
   display: none;
 }

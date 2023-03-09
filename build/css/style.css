@@ -763,6 +763,9 @@ button,
   height: 1px;
   background-color: #ffffff;
   border-radius: 5px;
+  -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .modal__close-button::before {
@@ -834,6 +837,9 @@ button,
   width: 215px;
   height: 55px;
   color: #f2f5f7;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .header__logo-link:hover .header__logo {
@@ -875,10 +881,16 @@ button,
   width: 20px;
   height: 20px;
   color: #00b2ff;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .header__contact-text {
   color: #f2f5f6;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .header__contact:hover .header__contact-text {
@@ -895,6 +907,9 @@ button,
   line-height: 16px;
   color: #f2f5f7;
   border: 1px solid #f2f5f7;
+  -webkit-transition: color 0.3s ease, border-color 0.3s ease;
+  -o-transition: color 0.3s ease, border-color 0.3s ease;
+  transition: color 0.3s ease, border-color 0.3s ease;
 }
 
 .header__button:hover {
@@ -947,6 +962,9 @@ button,
   width: 215px;
   height: 55px;
   color: #f2f5f7;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .footer__logo-link:hover .footer__logo {
@@ -1003,6 +1021,9 @@ button,
   font-family: "PT Mono", "Courier New", monospace;
   font-style: normal;
   color: rgba(255, 255, 255, 0.7);
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .footer-group__link:hover {
@@ -1057,6 +1078,9 @@ button,
 
 .social__icon {
   color: #f8fdff;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .social__link:hover .social__icon {
@@ -1128,6 +1152,9 @@ button,
   line-height: 21px;
   color: #f2f5f7;
   background-color: #00b2ff;
+  -webkit-transition: color 0.3s ease, background-color 0.3s ease;
+  -o-transition: color 0.3s ease, background-color 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .intro__button:hover {
@@ -1160,6 +1187,9 @@ button,
   position: relative;
   padding: 40px 40px 35px 45px;
   border: 1px solid #ebebeb;
+  -webkit-transition: border-color 0.3s ease, background-color 0.3s ease;
+  -o-transition: border-color 0.3s ease, background-color 0.3s ease;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
 .features__item::before {
@@ -1184,6 +1214,9 @@ button,
   height: 35px;
   margin-bottom: 20px;
   color: #00b2ff;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .features__item:hover svg {
@@ -1197,6 +1230,9 @@ button,
   font-size: 24px;
   line-height: 34px;
   color: #00b2ff;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .features__item:hover h3 {
@@ -1207,6 +1243,9 @@ button,
   margin: 0;
   font-family: "PT Mono", "Courier New", monospace;
   color: #041827;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .features__item:hover p {
@@ -1217,8 +1256,8 @@ button,
   min-height: 420px;
   padding-left: 300px;
   padding-bottom: 120px;
-  background-image: -webkit-image-set(url("../../img/2022@2x.webp") 2x, url("../../img/2022.webp") 1x, url("../../img/2022@2x.png") 2x, url("../../img/2022.png") 1x);
-  background-image: image-set(url("../../img/2022@2x.webp") 2x, url("../../img/2022.webp") 1x, url("../../img/2022@2x.png") 2x, url("../../img/2022.png") 1x);
+  background-image: -webkit-image-set(url("../../img/backgrounds/2022@2x.webp") 2x, url("../../img/backgrounds/2022.webp") 1x, url("../../img/backgrounds/2022@2x.png") 2x, url("../../img/backgrounds/2022.png") 1x);
+  background-image: image-set(url("../../img/backgrounds/2022@2x.webp") 2x, url("../../img/backgrounds/2022.webp") 1x, url("../../img/backgrounds/2022@2x.png") 2x, url("../../img/backgrounds/2022.png") 1x);
   background-size: 150px 320px;
   background-repeat: no-repeat;
   background-position: 50px 0;
@@ -1235,7 +1274,7 @@ button,
 
 .about p {
   margin: 0;
-  font-family: "PT Mono";
+  font-family: "PT Mono", "Courier New", monospace;
   color: #041827;
 }
 
@@ -1253,6 +1292,9 @@ button,
   color: #00b2ff;
   border: 1px solid #00b2ff;
   border-radius: 3px;
+  -webkit-transition: color 0.3s ease, background-color 0.3s ease;
+  -o-transition: color 0.3s ease, background-color 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .about__button:hover {
@@ -1355,6 +1397,9 @@ button,
   background-repeat: no-repeat;
   background-size: 5px 8px;
   background-position: center;
+  -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .service:hover::after {
@@ -1382,9 +1427,11 @@ button,
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
-  -webkit-transition: 0.6s ease;
-  -o-transition: 0.6s ease;
-  transition: 0.6s ease;
+  -webkit-transition: -webkit-transform 0.6s ease;
+  transition: -webkit-transform 0.6s ease;
+  -o-transition: transform 0.6s ease;
+  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
 }
 
 .service:active .service__image {
@@ -1481,6 +1528,9 @@ button,
   background-color: #019bdf;
   border: 2px solid transparent;
   border-radius: 3px;
+  -webkit-transition: border-color 0.3s ease;
+  -o-transition: border-color 0.3s ease;
+  transition: border-color 0.3s ease;
 }
 
 .form input::-webkit-input-placeholder,
@@ -1510,12 +1560,12 @@ button,
 
 .form input:hover,
 .form textarea:hover {
-  border: 2px solid rgba(4, 24, 39, 0.5);
+  border-color: rgba(4, 24, 39, 0.5);
 }
 
 .form input:focus,
 .form textarea:focus {
-  border: 2px solid #03101b;
+  border-color: #03101b;
   outline: none;
 }
 
@@ -1534,7 +1584,6 @@ button,
   -ms-flex-item-align: self-end;
   -ms-grid-row-align: self-end;
   align-self: self-end;
-  margin: 0;
   margin-left: 10px;
 }
 
@@ -1560,9 +1609,11 @@ button,
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  -webkit-transition: border-color 0.3s ease;
+  -o-transition: border-color 0.3s ease;
+  transition: border-color 0.3s ease;
 }
 
-.form__checkbox.is-invalid .form__checkbox-mark,
 .form__checkbox.is-invalid .form__checkbox-mark {
   border-color: #ff0000;
 }
@@ -1578,6 +1629,9 @@ button,
 
 .form__checkbox-icon {
   display: none;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .form__checkbox input:checked ~ .form__checkbox-icon {
@@ -1731,8 +1785,8 @@ button,
     width: 510px;
     height: 285px;
     margin-top: 20px;
-    background-image: -webkit-image-set(url("../../img/paper_airplane@2x.webp") 2x, url("../../img/paper_airplane.webp") 1x, url("../../img/paper_airplane@2x.png") 2x, url("../../img/paper_airplane.png") 1x);
-    background-image: image-set(url("../../img/paper_airplane@2x.webp") 2x, url("../../img/paper_airplane.webp") 1x, url("../../img/paper_airplane@2x.png") 2x, url("../../img/paper_airplane.png") 1x);
+    background-image: -webkit-image-set(url("../../img/backgrounds/paper_airplane@2x.webp") 2x, url("../../img/backgrounds/paper_airplane.webp") 1x, url("../../img/backgrounds/paper_airplane@2x.png") 2x, url("../../img/backgrounds/paper_airplane.png") 1x);
+    background-image: image-set(url("../../img/backgrounds/paper_airplane@2x.webp") 2x, url("../../img/backgrounds/paper_airplane.webp") 1x, url("../../img/backgrounds/paper_airplane@2x.png") 2x, url("../../img/backgrounds/paper_airplane.png") 1x);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;

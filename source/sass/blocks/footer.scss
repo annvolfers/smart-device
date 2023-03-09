@@ -78,6 +78,7 @@
   width: 215px;
   height: 55px;
   color: $color-alice-blue;
+  transition: color $trans-default;
 }
 
 .footer__logo-link:hover .footer__logo {

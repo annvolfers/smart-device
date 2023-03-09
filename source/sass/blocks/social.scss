@@ -23,6 +23,7 @@
 
 .social__icon {
   color: $color-alice-blue--light;
+  transition: color $trans-default;
 }
 
 .social__link:hover .social__icon {

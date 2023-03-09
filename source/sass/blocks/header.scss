@@ -54,6 +54,7 @@
   width: 215px;
   height: 55px;
   color: $color-alice-blue;
+  transition: color $trans-default;
 
   @include vp-767 {
     --textVibsibility: none;
@@ -128,6 +129,7 @@
   width: 20px;
   height: 20px;
   color: $color-deep-sky-blue--dark;
+  transition: color $trans-default;
 }
 
 .header__contact:hover .header__contact-icon {
@@ -138,6 +140,7 @@
 
 .header__contact-text {
   color: $color-alice-blue--dark;
+  transition: color $trans-default;
 
   @include vp-1023 {
     @include visually-hidden;
@@ -157,6 +160,7 @@
   line-height: 16px;
   color: $color-alice-blue;
   border: 1px solid $color-alice-blue;
+  transition: color $trans-default, border-color $trans-default;
 
   @include vp-1023 {
     display: none;
