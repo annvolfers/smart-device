@@ -1256,8 +1256,8 @@ button,
   min-height: 420px;
   padding-left: 300px;
   padding-bottom: 120px;
-  background-image: -webkit-image-set(url("../../img/backgrounds/2022@2x.webp") 2x, url("../../img/backgrounds/2022.webp") 1x, url("../../img/backgrounds/2022@2x.png") 2x, url("../../img/backgrounds/2022.png") 1x);
-  background-image: image-set(url("../../img/backgrounds/2022@2x.webp") 2x, url("../../img/backgrounds/2022.webp") 1x, url("../../img/backgrounds/2022@2x.png") 2x, url("../../img/backgrounds/2022.png") 1x);
+  background-image: -webkit-image-set(url("../img/backgrounds/2022@2x.webp") 2x, url("../img/backgrounds/2022.webp") 1x, url("../img/backgrounds/2022@2x.png") 2x, url("../img/backgrounds/2022.png") 1x);
+  background-image: image-set(url("../img/backgrounds/2022@2x.webp") 2x, url("../img/backgrounds/2022.webp") 1x, url("../img/backgrounds/2022@2x.png") 2x, url("../img/backgrounds/2022.png") 1x);
   background-size: 150px 320px;
   background-repeat: no-repeat;
   background-position: 50px 0;
@@ -1393,7 +1393,7 @@ button,
   height: 60px;
   background-color: #00b2ff;
   border-radius: 3px 0 0 0;
-  background-image: url("../../img/svg/arrow.svg");
+  background-image: url("../img/svg/arrow.svg");
   background-repeat: no-repeat;
   background-size: 5px 8px;
   background-position: center;
@@ -1785,8 +1785,8 @@ button,
     width: 510px;
     height: 285px;
     margin-top: 20px;
-    background-image: -webkit-image-set(url("../../img/backgrounds/paper_airplane@2x.webp") 2x, url("../../img/backgrounds/paper_airplane.webp") 1x, url("../../img/backgrounds/paper_airplane@2x.png") 2x, url("../../img/backgrounds/paper_airplane.png") 1x);
-    background-image: image-set(url("../../img/backgrounds/paper_airplane@2x.webp") 2x, url("../../img/backgrounds/paper_airplane.webp") 1x, url("../../img/backgrounds/paper_airplane@2x.png") 2x, url("../../img/backgrounds/paper_airplane.png") 1x);
+    background-image: -webkit-image-set(url("../img/backgrounds/paper_airplane@2x.webp") 2x, url("../img/backgrounds/paper_airplane.webp") 1x, url("../img/backgrounds/paper_airplane@2x.png") 2x, url("../img/backgrounds/paper_airplane.png") 1x);
+    background-image: image-set(url("../img/backgrounds/paper_airplane@2x.webp") 2x, url("../img/backgrounds/paper_airplane.webp") 1x, url("../img/backgrounds/paper_airplane@2x.png") 2x, url("../img/backgrounds/paper_airplane.png") 1x);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
