@@ -2,6 +2,7 @@
   position: relative;
   padding-top: 304px;
   padding-bottom: 280px;
+  margin-top: -$default-header-height-desktop;
 
   @include vp-1023 {
     margin-top: -$default-header-height-tablet;
@@ -26,7 +27,7 @@
   }
 }
 
-.intro__image {
+.intro img {
   position: absolute;
   top: 0;
   left: 0;

@@ -23,7 +23,7 @@
   position: relative;
   z-index: 2;
   padding-top: 165px;
-  padding-bottom: 247px;
+  padding-bottom: 248px;
 
   @include desktop-only {
     display: flex;
@@ -196,6 +196,7 @@
 }
 
 .form__checkbox {
+  order: 1;
   align-self: self-end;
   margin-left: 10px;
 

@@ -53,6 +53,19 @@
       background-color: $color-silver;
       transform: rotate(90deg);
     }
+
+    &:hover {
+      color: $color-deep-sky-blue--dark;
+
+      &::before,
+      &::after {
+        background-color: $color-deep-sky-blue--dark;
+      }
+    }
+
+    &:active {
+      opacity: 0.7;
+    }
   }
 }
 

@@ -64,7 +64,7 @@
   }
 }
 
-.service__image {
+.service img {
   position: absolute;
   top: 0;
   left: 0;
@@ -75,12 +75,12 @@
   background-color: $color-black-pearl--light;
 }
 
-.service:hover .service__image {
+.service:hover img {
   transform: scale(1.1);
   transition: transform $trans-600;
 }
 
-.service:active .service__image {
+.service:active img {
   opacity: 0.5;
 }
 

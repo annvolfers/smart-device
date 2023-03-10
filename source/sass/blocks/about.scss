@@ -1,24 +1,26 @@
 .about {
   min-height: 420px;
-  padding-left: 300px;
+  padding-top: 60px;
   padding-bottom: 120px;
+  padding-left: 300px;
   background-image: image-set(url("../img/backgrounds/2022@2x.webp") 2x,
       url("../img/backgrounds/2022.webp") 1x,
       url("../img/backgrounds/2022@2x.png") 2x,
       url("../img/backgrounds/2022.png") 1x);
   background-size: 150px 320px;
   background-repeat: no-repeat;
-  background-position: 50px 0;
+  background-position: 50px 60px;
 
   @include vp-1023 {
-    padding-left: 225px;
+    padding-top: 37px;
     padding-bottom: 80px;
-    background-position: 46px 5px;
+    padding-left: 225px;
+    background-position: 46px 42px;
   }
 
   @include vp-767 {
     min-height: unset;
-    padding: 0 25px 80px;
+    padding: 23px 25px 80px;
     background-image: none;
   }
 }
