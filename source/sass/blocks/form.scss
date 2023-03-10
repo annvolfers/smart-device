@@ -175,8 +175,8 @@
   }
 }
 
-.form label.is-invalid input,
-.form label.is-invalid textarea {
+.form input[aria-invalid="true"],
+.form textarea[aria-invalid="true"] {
   color: $color-mexican-red;
   border-color: $color-red;
 }

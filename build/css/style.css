@@ -1202,8 +1202,8 @@ button,
   outline: none;
 }
 
-.form label.is-invalid input,
-.form label.is-invalid textarea {
+.form input[aria-invalid=true],
+.form textarea[aria-invalid=true] {
   color: #9b3e3e;
   border-color: #ff0000;
 }
